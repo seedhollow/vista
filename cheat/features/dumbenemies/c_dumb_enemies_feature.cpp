@@ -29,7 +29,7 @@ namespace Features {
 
 	void CDumbEnemiesFeature::Initialize() {
 		LOG("[+] CDumbEnemiesFeature initialized\n");
-		//HookManager::install(UnityResolve::Get("Gameplay.Beyond.dll")->Get("EnemyAIBrain")->Get<UnityResolve::Method>("Tick")->function, hk_EnemyAIBrain_Tick);
+		HookManager::install(UnityResolve::Get("Gameplay.Beyond.dll")->Get("EnemyAIBrain")->Get<UnityResolve::Method>("Tick")->function, hk_EnemyAIBrain_Tick);
 		HookManager::install(UnityResolve::Get("Gameplay.Beyond.dll")->Get("EnemyAIBrain")->Get<UnityResolve::Method>("TriggerSensor")->function, hk_EnemyAIBrain_TriggerSensor);
 	}
 }
