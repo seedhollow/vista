@@ -42,7 +42,7 @@ namespace Menu
 				draw->rect_filled(draw_list, pos, pos + ImVec2(size.x, SCALE(50)), draw->get_clr(clr->window.header), SCALE(var->window.layout_rounding), ImDrawFlags_RoundCornersTop);
 				draw->line(draw_list, pos + ImVec2(0, SCALE(50)), pos + ImVec2(size.x, SCALE(50)), draw->get_clr(clr->window.stroke), 0.5f);
 
-				draw->colored_text(var->font.inter_bold[0], pos + SCALE(15, 0), pos + ImVec2(size.x, SCALE(50)), { {draw->get_clr(clr->other.white), "SEED"} , {draw->get_clr(clr->other.accent), "HOLLOW"} }, { 0.0, 0.5 });
+				draw->colored_text(var->font.inter_bold[0], pos + SCALE(15, 0), pos + ImVec2(size.x, SCALE(50)), { {draw->get_clr(clr->other.white), "VI"} , {draw->get_clr(clr->other.accent), "STA"} }, { 0.0, 0.5 });
 				draw->text_clipped(draw_list, var->font.inter_medium[0], pos + SCALE(15, 0), pos + ImVec2(gui->content_region_avail().x - SCALE(15), SCALE(50)), draw->get_clr(clr->other.accent), var->flavor.version.c_str(), NULL, NULL, ImVec2(1.0f, 0.5f));
 			}
 
@@ -182,11 +182,11 @@ namespace Menu
 						gui->begin_child("MISC");
 						{
 							// camera fov
-							widget->checkbox("Custom FOV", &misc_func->camera_fov);
+							/*widget->checkbox("Custom FOV", &misc_func->camera_fov);
 
 							if (misc_func->camera_fov) {
 								widget->slider_float("FOV Value", &misc_func->camera_fov_value, 30.f, 150.f, "%.0f");
-							}
+							}*/
 
 							widget->checkbox("Uncensored", &player_func->peeking, "Removes censorship from the game, gooners love this");
 						}
