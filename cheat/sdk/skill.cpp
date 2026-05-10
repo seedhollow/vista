@@ -21,6 +21,9 @@ namespace SDK {
 		_ApplyCost		= GetClass()->Get<UR::Method>("_ApplyCost");
 		CheckCd			= GetClass()->Get<UR::Method>("CheckCd");
 		CheckTag		= GetClass()->Get<UR::Method>("CheckTag");
+		get_cdRemainingTime = GetClass()->Get<UR::Method>("get_cdRemainingTime");
+		get_cdProgress		= GetClass()->Get<UR::Method>("get_cdProgress");
+		OnTick				= GetClass()->Get<UR::Method>("OnTick", { "System.Single", "System.Single"});
 
 
 		initialized = true;
@@ -30,6 +33,9 @@ namespace SDK {
 		LOG("[*] Skill::_ApplyCost: %p\n", _ApplyCost->function);
 		LOG("[*] Skill::CheckCd: %p\n", CheckCd->function);
 		LOG("[*] Skill::CheckTag: %p\n", CheckTag->function);
+		LOG("[*] Skill::get_cdRemainingTime: %p\n", get_cdRemainingTime->function);
+		LOG("[*] Skill::get_cdProgress: %p\n", get_cdProgress->function);
+		LOG("[*] Skill::OnTick: %p\n", OnTick->function);
 
 	}
 } // namespace SDK

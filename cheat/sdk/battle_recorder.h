@@ -23,7 +23,6 @@ namespace SDK {
 
 		inline static UR::Method* _RecordMoveDetail = nullptr;
 		inline static UR::Method* RecordMoveDetails = nullptr;
-		inline static UR::Method* Tick = nullptr;
 		inline static UR::Method* _ResetDetailReport = nullptr;
 		inline static UR::Method* _DoEndRecord = nullptr;
 		inline static UR::Method* ResetAll = nullptr;

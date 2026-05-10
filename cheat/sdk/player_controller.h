@@ -20,11 +20,10 @@ namespace SDK {
         inline static UR::Method* CastNormalAttack = nullptr;
         inline static UR::Method* set_lastShownMaxDashCount = nullptr;
         inline static UR::Method* get_lastShownMaxDashCount = nullptr;
-        inline static UR::Method* get_isFirstDash = nullptr;
         inline static UR::Method* get_isWalk = nullptr;
         inline static UR::Method* set_isWalk = nullptr;
-        inline static UR::Method* get_ultimateSpGainScalar = nullptr;
 		inline static UR::Method* DecreaseDashCount = nullptr;
+		inline static UR::Method* _CheckInAirForbid = nullptr;
 
         inline static UR::Field* f_mainCharacter = nullptr;
     private:

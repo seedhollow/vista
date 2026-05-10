@@ -33,7 +33,7 @@ namespace SDK {
 
 		_RecordMoveDetail		 = GetClass()->Get<UR::Method>("_RecordMoveDetail", { "Beyond.Gameplay.Core.Entity" });
 		RecordMoveDetails		 = GetClass()->Get<UR::Method>("RecordMoveDetails", { "Beyond.Gameplay.Core.Entity" });
-		Tick					 = GetClass()->Get <UR::Method>("Tick", { "System.Single" });
+		//Tick					 = GetClass()->Get <UR::Method>("Tick", { "System.Single" });
 		_ResetDetailReport		 = GetClass()->Get<UR::Method>("_ResetDetailReport");
 		_DoEndRecord			 = GetClass()->Get<UR::Method>("_DoEndRecord");
 		ResetAll				 = GetClass()->Get<UR::Method>("ResetAll");
@@ -59,7 +59,6 @@ namespace SDK {
 		LOG("[*] BattleRecorder::RecordConsumeDashCount: %p\n", RecordConsumeDashCount->function);
 		LOG("[*] BattleRecorder::_RecordMoveDetail: %p\n", _RecordMoveDetail->function);
 		LOG("[*] BattleRecorder::RecordMoveDetails: %p\n", RecordMoveDetails->function);
-		LOG("[*] BattleRecorder::Tick: %p\n", Tick->function);
 		LOG("[*] BattleRecorder::_ResetDetailReport: %p\n", _ResetDetailReport->function);
 		LOG("[*] BattleRecorder::_DoEndRecord: %p\n", _DoEndRecord->function);
 		LOG("[*] BattleRecorder::ResetAll: %p\n", ResetAll->function);

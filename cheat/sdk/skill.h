@@ -11,6 +11,9 @@ namespace SDK {
 		inline static UR::Method* _ApplyCost	= nullptr;
 		inline static UR::Method* CheckCd		= nullptr;
 		inline static UR::Method* CheckTag		= nullptr;
+		inline static UR::Method* get_cdRemainingTime = nullptr;
+		inline static UR::Method* get_cdProgress = nullptr;
+		inline static UR::Method* OnTick = nullptr;
 
 	private:
 		inline static bool initialized = false;

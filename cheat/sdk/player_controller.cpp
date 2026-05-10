@@ -34,11 +34,10 @@ namespace SDK {
 		CastNormalAttack                = GetClass()->Get<UR::Method>("CastNormalAttack");
 		set_lastShownMaxDashCount       = GetClass()->Get<UR::Method>("set_lastShownMaxDashCount");
 		get_lastShownMaxDashCount       = GetClass()->Get<UR::Method>("get_lastShownMaxDashCount");
-		get_isFirstDash                 = GetClass()->Get<UR::Method>("get_isFirstDash");
 		get_isWalk                      = GetClass()->Get<UR::Method>("get_isWalk");
 		set_isWalk                      = GetClass()->Get<UR::Method>("set_isWalk");
-		get_ultimateSpGainScalar        = GetClass()->Get<UR::Method>("get_ultimateSpGainScalar");
 		DecreaseDashCount				= GetClass()->Get<UR::Method>("DecreaseDashCount");
+		_CheckInAirForbid				= GetClass()->Get<UR::Method>("_CheckInAirForbid");
 
         LOG("[+] PlayerController initialized.\n");
 		LOG("[*] PlayerController::Tick: %p\n", Tick->function);
@@ -52,11 +51,10 @@ namespace SDK {
 		LOG("[*] PlayerController::CastNormalAttack: %p\n", CastNormalAttack->function);
 		LOG("[*] PlayerController::set_lastShownMaxDashCount: %p\n", set_lastShownMaxDashCount->function);
 		LOG("[*] PlayerController::get_lastShownMaxDashCount: %p\n", get_lastShownMaxDashCount->function);
-		LOG("[*] PlayerController::get_isFirstDash: %p\n", get_isFirstDash->function);
 		LOG("[*] PlayerController::get_isWalk: %p\n", get_isWalk->function);
 		LOG("[*] PlayerController::set_isWalk: %p\n", set_isWalk->function);
-		LOG("[*] PlayerController::get_ultimateSpGainScalar: %p\n", get_ultimateSpGainScalar);
 		LOG("[*] PlayerController::DecreaseDashCount: %p\n", DecreaseDashCount->function);
+		LOG("[*] PlayerController::_CheckInAirForbid: %p\n", _CheckInAirForbid->function);
 
 
         initialized = true;
